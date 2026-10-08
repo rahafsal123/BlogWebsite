@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Blog{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'main' %}">Home</a> |
+        <a href="{% url 'blogs' %}">Blogs</a> |
+        <a href="{% url 'categories' %}">Categories</a> |
+        <a href="{% url 'comments' %}">Comments</a> |
+        <a href="{% url 'users' %}">Users</a>
+    </nav>
+    <hr>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
